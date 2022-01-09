@@ -1,0 +1,376 @@
+#LinkButton6, #LinkButton11, #LinkButton12, #LinkButton8, #LinkButton9, #LinkButton10 {
+    color: white;
+}
+
+    #LinkButton6:hover, #LinkButton11:hover, #LinkButton12:hover, #LinkButton8:hover, #LinkButton9:hover, #LinkButton10:hover {
+        color: #d4747b;
+        transition: .5s ease
+    }
+
+body, html {
+    overflow-x: hidden;
+}
+
+#main {
+    /* background: #141e30;
+    background: linear-gradient( to right, #243b55, #141e30 );
+    height: auto;*/
+    background-image:url('../Images/Home-bg2.jpg');
+    background-size:100vw;
+    background-repeat:no-repeat;
+    background-position-y:-80px
+}
+
+
+    #main h2 {
+        padding-top: 7%;
+        padding-left: 5%;
+        font-size: 50px;
+    }
+
+.main-span {
+    font-size: 100px;
+}
+
+.main-btn {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-left: 5%;
+}
+
+    .main-btn:hover {
+        background-color: #d43d47;
+        box-shadow: 0px 15px 20px rgba(121, 38, 43, 0.55);
+        color: #fff;
+        transform: translateY(-7px);
+    }
+
+    .main-btn:active {
+        transform: translateY(-1px);
+    }
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    margin-left: 1%;
+    margin-bottom: 10%;
+}
+
+    .cta:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 50px;
+        background: #d43d47;
+        width: 45px;
+        height: 50px;
+        transition: all 0.3s ease;
+    }
+
+    .cta span {
+        position: relative;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: white;
+    }
+
+    .cta svg {
+        position: relative;
+        top: 0;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: white;
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.3s ease;
+    }
+
+    .cta:hover:before {
+        width: 100%;
+        background: #d43d47;
+    }
+
+    .cta:hover svg {
+        transform: translateX(0);
+    }
+
+    .cta:active {
+        transform: scale(0.95);
+    }
+
+    .mainLearnMore{
+        color:white;
+        text-decoration:none;
+    }
+    .mainLearnMore:hover{
+        color:white;
+        text-decoration:none;
+    }
+    .know-btn:hover{
+        opacity:.9;
+        transition-duration:.5s
+    }
+#library {
+    background-image: url('../Images/Library.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 90vh;
+    text-align: center
+}
+
+    #library h1 {
+        padding-top: 27%;
+        text-align: center;
+        color:white;
+    }
+
+.lib-btn {
+    width: 14em;
+    height: 4em;
+    border-radius: 30em;
+    font-size: 18px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #d43d47;
+    margin-top: 3%;
+    box-shadow: 1px 1px 2px #c5c5c5, -1px -1px 2px #ffffff;
+}
+
+    .lib-btn::before {
+        content: '';
+        width: 0;
+        height: 4em;
+        border-radius: 30em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient( to right, #243b55, #141e30 );
+        transition: .5s ease;
+        display: block;
+        z-index: -1;
+    }
+
+    .lib-btn:hover::before {
+        width: 14em;
+    }
+
+.seeAllBtn {
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    background: #141e30;
+    background: linear-gradient( to right, #243b55, #141e30 );
+    width: 30vw;
+    padding: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+    .seeAllBtn span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+        .seeAllBtn span:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -15px;
+            transition: 0.5s;
+        }
+
+    .seeAllBtn:hover span {
+        padding-right: 15px;
+    }
+
+        .seeAllBtn:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+#home-about {
+    background: #141e30;
+    background: linear-gradient( to right, #243b55, #141e30 );
+    height: auto;
+}
+.about-btn {
+    background-color: #d43d47;
+}
+.about-btn:hover{
+    opacity:0.9;
+    transition-duration:1s;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+    #myBtn:hover {
+        background-color: #555;
+    }
+
+@media only screen and (max-width: 1280px) {
+
+    #main {
+        background-size: 115vw
+    }
+
+}
+@media only screen and (max-width: 1024px) {
+
+    #main {
+        background-size: 140vw
+    }
+}
+
+@media only screen and (max-width: 912px) {
+
+    #main {
+        background-size:130vw
+    }
+    #library {
+        height:35vh
+    }
+}
+
+    @media only screen and (max-width: 840px) {
+        #main {
+            /* background: #141e30;
+            background: linear-gradient( to right, #243b55, #141e30 );
+            height: auto; */
+            background-image: url('Images/Mobile-bg.jpg');
+            background-size: 130%;
+            background-repeat: no-repeat;
+        }
+
+        .cta {
+            display: inline-block;
+            margin-left: 5%;
+            margin-top: 4%;
+            margin-bottom: 5%;
+        }
+
+        #main h2 {
+            font-size: 40px;
+        }
+
+        .main-span {
+            font-size: 65px;
+        }
+
+        #main p {
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+
+        #library {
+            height: 32vh
+        }
+
+        .lib-btn {
+            width: 10em;
+            height: 3em;
+        }
+
+        #library h1 {
+            font-size: 24px;
+            padding-top: 23%
+        }
+
+        .seeAllBtn {
+            width: 70vw;
+            padding: 12px
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+
+
+        #main {
+            background-image: url('Images/Mobile-bg.jpg');
+            background-size: 140%;
+            background-repeat: no-repeat;
+        }
+        #main h2 {
+            font-size: 35px;
+        }
+
+        .main-span {
+            font-size: 55px;
+        }
+        #main p {
+            margin-top: 10%;
+            margin-bottom: 8%;
+        }
+    }
+@media only screen and (max-width: 375px) {
+
+    #library {
+        height: 40vh
+    }
+
+}
+@media only screen and (max-width: 300px) {
+
+    #library {
+        height: 40vh
+    }
+    #main {
+        background-image: url('Images/Mobile-bg.jpg');
+        background-size: 210%;
+        background-repeat: no-repeat;
+    }
+
+}
+

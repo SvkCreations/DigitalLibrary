@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="DataTables/CSS/jquery.dataTables.min.css" rel="stylesheet" />
+
+    <link href="FontAwesome/css/all.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="index.css">
+
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="index.js"></script>
+
+    <title>Digital Library | iLEAD</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/iLEAD-publication-Logo.png" alt="" width="120"
+                        class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-5" aria-current="page" href="/"
+                                onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"><i class="fa fa-home"
+                                    style="padding-right:5px; font-size:20px"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="books.html" onmouseover="mouseOver1(this)"
+                                onmouseout="mouseOut1(this)"><i class="fa fa-book"
+                                    style="padding-right:5px; font-size:20px"></i>Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-5" href="contact.html" onmouseover="mouseOver1(this)"
+                                onmouseout="mouseOut1(this)"><i class="fa fa-address-book"
+                                    style="padding-right:5px; font-size:20px"></i>Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" onmouseover="mouseOver1(this)"
+                                onmouseout="mouseOut1(this)"><i class="fas fa-address-card"
+                                    style="padding-right:5px; font-size:20px"></i>About Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="col-md-3 text-end">
+                        <button type="button" class="btn btn-outline-danger me-2" onclick="document.location='login.html'">Login</button>
+                        <button type="button" class="btn btn-danger" onclick="document.location='signup.html'">Sign-up</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+
+
+    <div class="container-fluid text-white" id="main">
+        <h2>Welcome to the<br><span class="main-span"><b>Digital Library</b></span><br>powered by <b>iLEAD</b></h2>
+        <p class="lead py-lg-5" style="padding-left: 5%;">This is a Collection of all the books published by
+            <b>iLead</b>. We made it<br>easy for you to get access to these books
+        </p>
+        <button class="main-btn" onclick="document.location='books.html'">See Collection</button>
+        <button class="cta" onclick="document.location='about.html'">
+            <span><a class="mainLearnMore" href="About.aspx">Learn more</a></span>
+            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+        </button>
+    </div>
+
+    <!-- About Digital Library -->
+    <div class="container col-xxl-8 px-4 py-4" id="reading">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="Images/Reading-books.png" class="d-block mx-lg-auto img-fluid" width="1500"
+                    alt="Bootstrap Themes" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <img src="Images/iLEAD-publication-Logo(dark).png" class="mb-3" width="290" />
+                <h1 class="display-5 fw-bold lh-1 mb-3 px-4">Digital Book Library</h1>
+                <p class="lead px-4">Here you get a variety of books wriiten, designed and edited by Mr. Pradip Chopra
+                    in association with iLead management.Named after Ayn Rand 1943 novel,The Fountainhead, the iLEAD
+                    main library nurtures reading habits of students and attracts book lovers across the World.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button class="btn btn-lg px-4 me-md-2 mx-lg-4 know-btn"
+                        style="background-color:#d43d47; color:white">Know more</button>
+                    <button class="btn btn-outline-primary btn-lg px-4" onclick="document.location='UnderConstruction.html'">Get Location</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Features Section -->
+    <div id="features" class="container-fluid my-5 text-white py-5"
+        style="background: #141e30; background: linear-gradient( to right, #243b55, #141e30 ); ">
+        <h1 style="text-align:center">Our Features</h1>
+        <div class="container">
+            <div class="row my-lg-5">
+                <div class="col-lg-4" style="text-align:center">
+                    <img class="bd-placeholder-img rounded-circle" width="220" height="220"
+                        src="Images/Read-books-01.png" />
+
+                    <h2>Read Books</h2>
+                    <p>You can now read so many free books from straight from this site or download them as pdf. </p>
+                </div>
+                <div class="col-lg-4" style="text-align:center">
+                    <img class="bd-placeholder-img rounded-circle" width="220" height="220"
+                        src="Images/Buy-books.png" />
+
+                    <h2>Buy books</h2>
+                    <p>Buy your favorite books at amazingly low price from this site. Now you can avail upto <b>30%
+                            discount.</b></p>
+                </div>
+                <div class="col-lg-4" style="text-align:center">
+                    <img class="bd-placeholder-img rounded-circle" width="220" height="220"
+                        src="Images/Rent-books.png" />
+
+                    <h2>Rent Books</h2>
+                    <p>Don't want to buy books for life? We got you covered. You can now rent books from our site.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Some books section -->
+    <div class="container col-xxl-8 px-4" id="books" >
+        <h1 class="px-5" style="font-weight:bold; text-align:center">Some books of iLEAD Publication</h1>
+        <div class="row flex-lg-row align-items-center g-5 py-5" id="book-1" >
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="Images/Pub-4.jpg" class="d-block mx-lg-auto img-fluid" width="700" height="500"
+                    loading="lazy">
+            </div>
+            <div class="col-lg-6">
+
+                <h1 class="display-5 fw-bold lh-1 mb-3">Sheherwali</h1>
+                <p class="lead">The subtle frarance of rose water is a trademark of Sheherwali Cuisine. The rose water
+                    container dates back almost 100 years, with exquisite filigree work by master craftsmen of
+                    Murshidabad.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <Button
+                        class="btn btn-primary btn-lg px-4 me-md-2" onclick="alert('This funcionality is coming soon')">Download</Button>
+                    <button type="button" class="btn btn-outline-danger btn-lg px-4" onclick="alert('This funcionality is coming soon')">Buy</button>
+                </div>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+    </div>
+
+    <div class="container col-xxl-8 px-4">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="book-2">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="Images/Love-Romance.jpg" class="d-block mx-lg-auto img-fluid" width="700" height="500"
+                    loading="lazy">
+            </div>
+            <div class="col-lg-6">
+
+                <h1 class="display-5 fw-bold lh-1 mb-3">Love and Romance</h1>
+                <p class="lead">High aspirations and the fast pace of life today are creating havoc in our lives and
+                    marriages. Mr. Chopra's concern for his children and for all those in their age group, has inspired
+                    him to compile this book through which they can enrich their lives with love, romance and an
+                    enduring marriage.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onclick="alert('This funcionality is coming soon')">Download</button>
+                    <button type="button" class="btn btn-outline-danger btn-lg px-4" onclick="alert('This funcionality is coming soon')">Buy</button>
+                </div>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+    </div>
+
+    <div class="container col-xxl-8 px-4">
+        <div class="row flex-lg-row align-items-center g-5 py-5" id="book-3">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="Images/Life-Shapers.jpg" class="d-block mx-lg-auto img-fluid" width="700" height="500"
+                    loading="lazy">
+            </div>
+            <div class="col-lg-6">
+
+                <h1 class="display-5 fw-bold lh-1 mb-3">Life Shapers</h1>
+                <p class="lead">Life Shapers has a collection of inspirational stories that truly celebrates and honours
+                    our mentors, the TEACHERS. Here is hoping that you will cherish this stories for a long time and
+                    never stop thanking your Teachers for the roles they have played in your life.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onclick="alert('This funcionality is coming soon')">Download</button>
+                    <button type="button" class="btn btn-outline-danger btn-lg px-4" onclick="alert('This funcionality is coming soon')">Buy</button>
+                </div>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+    </div>
+
+
+
+    <!-- About-Section in Home -->
+    <div class="container-fluid mt-lg-5" id="home-about">
+        <div class="container col-xxl-8 px-4 py-5 text-white">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="Images/iLEAD%20Publication%20Book%20Library_03.jpg" class="d-block mx-lg-auto img-fluid"
+                        width="700" height="500" loading="lazy" />
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">About iLEAD Library</h1>
+                    <p class="lead">Explorer World, the Audio Visual Library has an area of 800 sq.ft. It has over 2500
+                        CDs/DVDs and more than 2,000 e-resources which include e-books, documentaries, tutorial and
+                        articles on various subjects. The digital library is eqipped with 12 MACs and 5 desktops for
+                        users. Both the libraries together have a sitting capacity of 124 students.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+
+                        <button class="btn btn-lg px-4 me-md-2 text-white about-btn">Learn more</button> 
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid bg-dark text-white">
+        <footer class="py-3">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="UnderConstruction.html">
+                        Admin Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="UnderConstruction.html">
+                        Book Inventory</a>
+                </li>
+            </ul>
+            <p class="text-center text-white">© 2021 All rights reserved. iLead, Inc</p>
+        </footer>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
