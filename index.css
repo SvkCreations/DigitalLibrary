@@ -12,10 +12,7 @@ body, html {
 }
 
 #main {
-    /* background: #141e30;
-    background: linear-gradient( to right, #243b55, #141e30 );
-    height: auto;*/
-    background-image:url('../Images/Home-bg2.jpg');
+    background-image:url('Images/Home-bg2.jpg');
     background-size:100vw;
     background-repeat:no-repeat;
     background-position-y:-80px
