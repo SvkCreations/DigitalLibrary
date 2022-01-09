@@ -353,6 +353,11 @@ body, html {
     #library {
         height: 40vh
     }
+    #main {
+            background: #141e30;
+            background: linear-gradient( to right, #243b55, #141e30 );
+            height: auto;
+        }
 
 }
 @media only screen and (max-width: 300px) {
