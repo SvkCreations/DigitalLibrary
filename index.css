@@ -332,9 +332,9 @@ body, html {
 
 
         #main {
-            background-image: url('Images/Mobile-bg.jpg');
-            background-size: 140%;
-            background-repeat: no-repeat;
+            background: #141e30;
+            background: linear-gradient( to right, #243b55, #141e30 );
+            height: auto;
         }
         #main h2 {
             font-size: 35px;
@@ -361,9 +361,9 @@ body, html {
         height: 40vh
     }
     #main {
-        background-image: url('Images/Mobile-bg.jpg');
-        background-size: 210%;
-        background-repeat: no-repeat;
+        background: #141e30;
+            background: linear-gradient( to right, #243b55, #141e30 );
+            height: auto;
     }
 
 }
